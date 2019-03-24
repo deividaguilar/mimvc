@@ -1,0 +1,19 @@
+{
+    "name": "deivid/mi-mvc",
+    "description": "this is a little project to practice MVC model.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "deividaguilar",
+            "email": "deividaguilar@hotmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "illuminate/database": "^5.5.0",
+        "doctrine/dbal": "~2.6.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8"
+    }
+}
