@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<phpunit colors="true" verbose="true" bootstrap="core/Autoloader.php">
+    <php>
+        <server name="KERNEL_DIR" value="app/" />
+    </php>
+    <testsuites>
+        <testsuite name="my mvc">
+            <directory>tests</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>

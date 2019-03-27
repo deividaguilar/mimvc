@@ -1,4 +1,5 @@
 <?php
+
 class Autoloader
 {
     public function __construct()
@@ -11,13 +12,13 @@ class Autoloader
     private function loadAppClasess()
     {
         spl_autoload_register(function ($className) {
-            require_once preg_replace("/\\\\/", "/", $className) . ".php";
+            require_once preg_replace("/\\\\/", DS, $className) . ".php";
         });
     }
 
     private function loadVendor()
     {
-        require_once '../vendor/autoload.php';
+        require_once 'vendor' . DS . 'autoload.php';
     }
 
     private function loadDataBase()
@@ -25,5 +26,3 @@ class Autoloader
         require_once 'database.php';
     }
 }
-
-new Autoloader;
